@@ -3,7 +3,7 @@ url = "/kurzy"
 layout = "Default"
 is_hidden = 0
 ==
-    <div class="card-deck">
+<div class="card-deck">
         <!-- HybridLab karta -->
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="themes\KurzCademy\assets\Img\KurzPhotos\HybridLab.jpg" alt="Card image cap">
@@ -13,7 +13,7 @@ is_hidden = 0
                 {% if user %}
                 <a href="prihlaseniekurz" class="btn btn-primary">Požiadať o pridanie</a>
                 {% else %}
-                <a href="account" class="btn btn-primary">Prihlasiť sa</a>
+                  <a onclick="openPopup('login')" class="btn btn-primary">Prihlasiť sa</a>
                 {% endif %}
             </div>
         </div>
@@ -27,7 +27,7 @@ is_hidden = 0
                 {% if user %}
                 <a href="prihlaseniekurz" class="btn btn-primary">Požiadať o pridanie</a>
                 {% else %}
-                <a href="account" class="btn btn-primary">Prihlasiť sa</a>
+                  <a onclick="openPopup('login')" class="btn btn-primary">Prihlasiť sa</a>
                 {% endif %}
             </div>
         </div>
@@ -41,7 +41,7 @@ is_hidden = 0
                 {% if user %}
                   <a href="newkurz" class="btn btn-primary">Napísať žiadosť</a>
                 {% else %}
-                  <a href="account" class="btn btn-primary">Prihlasiť sa</a>
+                  <a onclick="openPopup('login')" class="btn btn-primary">Prihlasiť sa</a>
                 {% endif %}
             </div>
         </div>

@@ -1,0 +1,28 @@
+title = "NewKurz"
+url = "/newkurz"
+is_hidden = 0
+
+==
+<form class="newkurz" action="createkurz.php" method="post">
+  <input type="text" name="Title" placeholder="Kurz title">
+  <select class="tabscount" name="tabscount">
+    <option value="2">2 okná</option>
+    <option value="3">3 okná</option>
+    <option value="4">4 okná</option>
+    <option value="5">5 okien</option>
+    <option value="6">6 okien</option>
+    <option value="7">7 okien</option>
+    <option value="8">8 okien</option>
+  </select>
+  <input type="submit" name="create" value="Vytvoriť">
+</form>
+
+
+<?php
+$title = $_POST['Title'];
+if (empty($title)) {
+  echo '<h1>Title is empty, try again</h1>'
+}else{
+  echo '<h1>'.$title.'</h1>';
+}
+ ?>
