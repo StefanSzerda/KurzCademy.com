@@ -70,6 +70,5 @@ By default, the filter uses the current locale. You can pass it explicitly:
 Arguments
 ---------
 
-* ``currency``: The currency
-* ``attrs``: A map of attributes
 * ``locale``: The locale
+* ``attrs``: A map of attributes

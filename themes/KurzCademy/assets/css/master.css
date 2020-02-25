@@ -20,3 +20,41 @@ body{
   height: 384px;
   float: left;
 }
+
+/* Classy pre vyskakovacie okna */
+.popupParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+
+.popupWindow {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  animation: pupupWindowAnimation 0.25s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes pupupWindowAnimation {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+.popupIframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
