@@ -57,13 +57,6 @@ body{
   text-align: center;
 }
 
-.footer-img{
-	height: 16px;
-	width: 16px;
-	opacity: 40%;
-	margin-left: 5px;
-}
-
 .excersize-question {
   height: 1.5em;
 }
@@ -111,6 +104,50 @@ body{
   padding: 0;
 }
 
+.footer-img{
+	height: 16px;
+	width: 16px;
+	opacity: 40%;
+	margin-left: 5px;
+}
+
+.mainpage-top-img{
+	height: 10000%;
+	margin-top: -70px;
+	opacity: 100%;
+	filter: alpha(opacity=1);
+}
+
+.void{
+	height: 10px;
+}
+
+.hide-on-phone{
+	display: none;
+}
+
+.show-on-phone{
+	display: none;
+}
+
+@media screen and (min-width:0px ) and (max-width: 720px) {
+	.mainpage-top-img{
+		height: 5000%;
+		opacity: 20%;
+		filter: alpha(opacity=0.2);
+		margin-right:-30px;
+	}
+	.void{
+		height: 10px;
+	}
+	.hide-on-phone{
+		display: none;
+	}
+	.show-on-phone{
+		display: block;
+	}
+}
+
 .mainpage > .row > .col-md,.col{
 	color: #5f5b78;
 }
@@ -140,11 +177,16 @@ body{
 	height: 50px;
 }
 
+.mainpage-ficurky{
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
 img.mainpage-ficurky{
 	height: 180px;
 	width: 300px;
 }
-div.mainpage-ficurky{
+.mainpage-ficurky > div.mainpage-ficurky{
 	padding: 0% 10% 0% 10%;
 }
 .mainpage-our-courses{

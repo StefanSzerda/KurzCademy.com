@@ -47,9 +47,11 @@ security = "all"
 
     {% framework extras %} <!-- idk if work -->
 
-    {% partial "header.htm" %} <!-- Pripojenie navbaru -->
+	<div style="min-height: calc(100vh - 90px);">
+    	{% partial "header.htm" %} <!-- Pripojenie navbaru -->
 
-    {% page %} <!-- Sem je vsetko na stranke -->
+		{% page %} <!-- Sem je vsetko na stranke -->
+	</div>
 
     {% partial "footer.htm" %} <!-- Pripojenie footeru -->
 

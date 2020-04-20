@@ -10,30 +10,37 @@ is_hidden = 0
 	<div class="container-fluid mainpage">
 		<div class="row">
 			<div class="col d-flex justify-content-end" style="height: 10px; z-index: -1">
-				<img style="height: 10000%; margin-top: -70px" src="themes/KurzCademy/assets/Img/otherLogos/mainpage-1.png">
+				<img class="mainpage-top-img" src="themes/KurzCademy/assets/Img/otherLogos/mainpage-1.png">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md">
-				<div style="height: calc(100vw / 8)"></div><!-- Len na roztiahnutie stranky -->
+
+					<div class="void" style="height: calc(100vw / 8)"></div><!-- Len na roztiahnutie stranky -->
+
 				<p style="font-size: 13px; margin-bottom: 20px;">VŠETKO ON-LINE</p>
 				<h2><b>Vzdelanie, ktoré ti zmení život</b></h2>
 				<p>Vyber si oblasť, v ktorej sa chceš vzdelávať.</p>
 				<p>Naše kurzy ťa prevedú od úplných zákoadov až op pokročilejšie techniky.</p>
 				{% if user %}
-				<button class="btn btn-primary" style="background-color: #575eed; margin: 30px 0px 50px 0px;" onclick="location.href='/mojekurzy'">Moje Kurzy</button>
+				<button class="btn btn-primary" style="background-color: #575eed; margin-top: 30px;" onclick="location.href='/mojekurzy'">Moje Kurzy</button>
 				{% else %}
-				<button class="btn btn-primary" style="background-color: #575eed; margin: 30px 0px 50px 0px;" onclick="openPopup('login')">Prihlásiť sa</button>
+				<button class="btn btn-primary" style="background-color: #575eed; margin-top: 30px;" onclick="openPopup('login')">Prihlásiť sa</button>
 				{% endif %}
+
+					<div class="void" style="height: 20px;"></div><!-- Len na rozdiahnutie stranky -->
+
 				<p>Aké technológie sa tu naučíte:</p>
-				<div style="margin-bottom: 150px;">
+				<div>
 					<img class="mainpage-learnthis" src="themes/KurzCademy/assets/Img/otherLogos/ionic-logo.png">
 					<img class="mainpage-learnthis" src="themes/KurzCademy/assets/Img/otherLogos/un-js-logo.png">
 					<img class="mainpage-learnthis" src="themes/KurzCademy/assets/Img/otherLogos/react-logo.png">
 					<img class="mainpage-learnthis" src="themes/KurzCademy/assets/Img/otherLogos/vue-logo.png">
 					<img class="mainpage-learnthis" src="themes/KurzCademy/assets/Img/otherLogos/angular-logo.png">
 				</div>
-				<div style="height: calc(100vw / 18)"></div><!-- Len na roztiahnutie stranky -->
+
+					<div class="void" style="height: calc(100vw / 6)"></div><!-- Len na roztiahnutie stranky -->
+
 				<div style="margin-bottom: 50px;">
 					<h2>V našich kurzoch učíme ľudí <b>programovať webstránky a mobilné aplikácie</b></h2>
 				</div>
@@ -43,21 +50,21 @@ is_hidden = 0
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md d-flex align-items-center" style="flex-direction: column;">
+			<div class="col-md d-flex align-items-center mainpage-ficurky">
 				<img class="mainpage-ficurky" src="themes/KurzCademy/assets/Img/topficurky/ficurka-1.png">
 				<div class="mainpage-ficurky">
 					<h3><b>Top fičurka ktorá je najlepšia</b></h3>
 					<p>Vyberte si oblasť, v ktorej sa chceš vzdelávať. Naše kurzy ťa prevedú od úplných zákoadov až op pokročilejšie techniky.</p>
 				</div>
 			</div>
-			<div class="col-md d-flex align-items-center" style="flex-direction: column;">
+			<div class="col-md d-flex align-items-center mainpage-ficurky">
 				<img class="mainpage-ficurky" src="themes/KurzCademy/assets/Img/topficurky/ficurka-2.png">
 				<div class="mainpage-ficurky">
 					<h3><b>Top fičurka ktorá je najlepšia</b></h3>
 					<p>Vyberte si oblasť, v ktorej sa chceš vzdelávať. Naše kurzy ťa prevedú od úplných zákoadov až op pokročilejšie techniky.</p>
 				</div>
 			</div>
-			<div class="col-md d-flex align-items-center" style="flex-direction: column;">
+			<div class="col-md d-flex align-items-center mainpage-ficurky">
 				<img class="mainpage-ficurky" src="themes/KurzCademy/assets/Img/topficurky/ficurka-3.png">
 				<div class="mainpage-ficurky">
 					<h3><b>Top fičurka ktorá je najlepšia</b></h3>
@@ -97,9 +104,9 @@ is_hidden = 0
 			<div class="col-md-8">
 
 				<a class="mainpage-our-courses" style="background-color: #bbd4ff; height: 98%;" href="/">
-					<div style="padding-left: 10%; width: 60%;">
+					<div style="padding-left: 10%; width: 60%; z-index: 1;">
 						<h3><b>IONIC</b></h3>
-						<p style="text-overflow: none;">pre začiatočníkov</p>
+						<p>pre začiatočníkov</p>
 					</div>
 					<div style="width: 40%">
 						<img style="width: 120%; margin:-5% 0% -0.8% -19.5%" src="themes/KurzCademy/assets/Img/KurzPhotos/kurzIonic.png">
